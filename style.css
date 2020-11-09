@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul:last-child {
+  margin-right: 1em;
+}
+li {
+  list-style: none;
+}
+
+li a {
+  margin-right: 1em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav button {
+  margin-left: 2em;
+  cursor: pointer;
+  padding: 1em;
+  background: linear-gradient( to right,  #f4f4f4 50%, #2bb359 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all ease .3s;
+}
+
+nav button:hover {
+  background-position: right bottom;
+}
+
+nav .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  margin-top: 2em;
+ 
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+iframe {
+  width: 60vw;
+  height: 75vh;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 2.5em;
+  color: #c8d1e0;
+}
+
+
+
+.donation-progress {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.donation-progress p {
+  word-wrap: wrap;
+  padding: 1em;
+}
+.donation-progress button {
+  cursor: pointer;
+  width: 50%;
+  padding: 2em;
+  align-self: center;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #2bb359;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+span {
+  font-weight: bold;
+  font-size: 3em;
+  display: block;
+  margin-bottom: 0.7em;
+}
+
+.prog-bar {
+  margin: 0 1.5em;
+  background-color:#b6b6d3;
+  
+}
+
+.prog-bar>div {
+  background-color: #2bb359;
+  width: 51.22%;
+  /* Adjust with JavaScript */
+  height: 0.3em;
+}

@@ -131,3 +131,61 @@ span {
   /* Adjust with JavaScript */
   height: 0.3em;
 }
+
+
+.fa-rotate-135 {
+  -ms-transform:rotate(135deg);     
+  -webkit-transform:rotate(135deg); 
+  transform:rotate(135deg);         
+}
+.keywords {
+  margin: 0 0 0 10em;
+}
+.keywords a{
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 0.5em;
+}
+
+.campaign-story-sec {
+  width: 50%;
+  margin: 4em 2em 2em 11em;
+  max-width: 960px;
+}
+
+.campaign-story-sec h3 {
+  margin: 3em 0 0em -.5em;
+  font-weight: bold;
+  font-size: 3em;
+  border-bottom: 1px solid #000;
+  width: 100%;
+
+}
+
+.green-shade {
+  background: #dff5e8;
+  margin:0 0 3em -1.5em;
+  padding-top: 0;
+  height: 200px;
+  width: 100%;
+}
+.wrap {
+  padding: 1em 2em;
+}
+
+.wrap h5 {
+  font-size: 1.5em;
+}
+.wrap p {
+  font-size: 1em;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.6em;
+  text-decoration: underline;
+}
+
+.campaign-story p {
+  font-size: 1em;
+}

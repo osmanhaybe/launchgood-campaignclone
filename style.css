@@ -80,18 +80,17 @@ h1 {
 
 .wrapper {
   display: flex;
-  background: #fff;
   width: 100%;
-  height: 75vh;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+  height: 90vh;
+  padding: 3em;
 }
 
 iframe {
   width: 60vw;
   height: 100%;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
 }
 
 h2 {
@@ -103,18 +102,23 @@ h2 {
 
 
 .donation-progress {
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
 }
 .donation-progress p {
   word-wrap: wrap;
-  padding: 1em;
+  padding: 0.5em;
 }
 .donation-progress button {
   cursor: pointer;
   width: 50%;
-  padding: 2em;
+  padding: 1.75em;
   align-self: center;
   border-radius: 30px;
   text-transform: uppercase;
@@ -129,13 +133,13 @@ button:hover {
 
 span {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.75em;
   display: block;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
 }
 
 .prog-bar {
-  margin: 0 1.5em;
+  margin: 0 1em;
   background-color:#b6b6d3;
   
 }
@@ -147,6 +151,9 @@ span {
   height: 0.3em;
 }
 
+.bottom-desc {
+  margin-top: 5em;
+}
 
 .fa-rotate-135 {
   -ms-transform:rotate(135deg);     
@@ -160,6 +167,13 @@ span {
   border: 1px solid #000;
   border-radius: 30px;
   padding: 0.5em;
+}
+
+.campaign-info-wrap {
+  width: 100%;
+  position: relative;
+  padding: 3em;
+  display: flex;
 }
 
 .campaign-story-sec {
@@ -208,4 +222,54 @@ h4 {
 .campaign-story img {
   width: 80%;
   height: auto;
+}
+
+.organizer-info {
+  width: 375px;
+  height: 375px;
+  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.organizer-info h6, .organizer-info .fas{
+  color: #57c282;
+  margin: 0;
+  padding:0;
+}
+
+.organizer-info h6 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0.5em
+}
+.organizer-info img {
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-top: 1em;
+}
+
+.line {
+  border-left: 2px solid #888;
+  height: 15px;
+  padding: 20px 0;
+}
+
+.grey {
+  color: #888;
+  margin-top:0;
+  font-size: 1em;
+}
+
+h7 {
+  font-size: 1.1em;
+}
+
+.organizer-info p {
+  margin-top: 0;
+  padding-top: 0;
 }

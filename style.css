@@ -462,13 +462,23 @@ img.to-reduce{
   .campaign-info-wrap {
     display: flex;
     flex-direction: column;
+    margin:0;
+    padding:0;
   }
 
   .campaign-story-sec {
     width: 100%;
     margin: 0;
-    padding: 0.5em;
+    padding: 0;
     text-align: left;
   }
-
+  .campaign-story-sec h3 {
+    padding:1em 0;
+    margin:0;
+  }
+  .green-shade {
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
 }

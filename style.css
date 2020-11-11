@@ -239,8 +239,9 @@ h4 {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  margin-bottom:
 }
+
+
 .organizer-info h6, .organizer-info .fas{
   color: #57c282;
   margin: 0;
@@ -345,4 +346,13 @@ img.to-reduce{
 
  button:focus{
    outline: 0;
+ }
+
+ #ul2, #ul3 {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+ }
+
+ ul {
+   margin-bottom: 0.3em;
  }

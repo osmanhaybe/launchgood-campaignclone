@@ -128,7 +128,7 @@ h2 {
 }
 
 button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 span {
@@ -161,7 +161,7 @@ span {
   transform:rotate(135deg);         
 }
 .keywords {
-  margin: 0 0 0 10em;
+  margin: -1em 0 0 10em;
 }
 .keywords a{
   border: 1px solid #000;
@@ -224,6 +224,11 @@ h4 {
   height: auto;
 }
 
+.contain {
+  display: flex;
+  flex-direction: column;
+  margin-top: -6em;
+}
 .organizer-info {
   width: 375px;
   height: 375px;
@@ -234,6 +239,7 @@ h4 {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  margin-bottom:
 }
 .organizer-info h6, .organizer-info .fas{
   color: #57c282;
@@ -273,3 +279,70 @@ h7 {
   margin-top: 0;
   padding-top: 0;
 }
+
+
+.hide-desktop {
+  display: none;
+}
+
+.donors {
+  display: flex;
+  flex-direction: column;
+}
+
+ul  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.donors img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+img.to-reduce{
+  width: 25px;
+  height: 25px;
+}
+
+.donors li p {
+  margin-left: 2em;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.donors li {
+  margin-bottom: 0.3em;
+}
+
+.donors h1 {
+  text-align: left;
+}
+ .donors button {
+  font-weight: 800;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  border: initial;
+  background-color: initial;
+  color: #57c282;
+  cursor: pointer;
+  text-align: center;
+ }
+
+ .show-more {
+   display: none;
+ }
+
+ .see-less {
+   display: hidden;
+ }
+
+ .show-more-button {
+   display: none;
+ }
+
+ button:focus{
+   outline: 0;
+ }

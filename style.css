@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+.hide-big {
+  display: none;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
@@ -384,7 +387,9 @@ img.to-reduce{
   body {
     font-size: 14px;
   }
-  
+  .show-small {
+    display: block;
+  }
   nav {
     padding: 0.5em 2em;
   }
@@ -466,6 +471,7 @@ img.to-reduce{
     padding:0;
   }
 
+
   .campaign-story-sec {
     width: 100%;
     margin: 0;
@@ -475,10 +481,38 @@ img.to-reduce{
   .campaign-story-sec h3 {
     padding:1em 0;
     margin:0;
+    text-decoration: none;
+    border: none;
   }
+
+  .campaign-story {
+    width: 100%;
+  }
+  .campaign-story #read-more, .campaign-story #read-less {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: initial;
+    background-color: initial;
+    color: #57c282;
+    text-align: center;
+   }
+
   .green-shade {
     width: 100%;
     margin:0;
     padding:0;
+  }
+
+  .organizer-info {
+    margin-top: 10em;
+    box-shadow: none;
+    width: 100%;
+
+  }
+
+  .hide-button {
+    display: none;
   }
 }

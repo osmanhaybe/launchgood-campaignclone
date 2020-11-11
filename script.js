@@ -28,3 +28,27 @@ function hideDonors() {
 buttonOne.addEventListener('click', showUlTwo);
 buttonTwo.addEventListener('click', showUlThree);
 buttonThreeL.addEventListener('click', hideDonors);
+
+
+const readMore = document.getElementById("read-more");
+const readLess = document.getElementById("read-less");
+const showText = document.getElementById("main-description");
+
+function showStory() {
+  showText.classList.remove('show-more');
+  readMore.classList.add("hide-button");
+  readLess.classList.remove("hide-button");
+  
+}
+
+function hideStory(){
+  showText.classList.add('show-more');
+  readMore.classList.remove("hide-button");
+  readLess.classList.add("hide-button");
+}
+
+
+// event listeners
+readMore.addEventListener('click', showStory);
+readLess.addEventListener('click', hideStory);
+

@@ -14,15 +14,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em 1.5em;
 }
-ul {
+nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-ul:last-child {
-  margin-right: 1em;
+  align-items: flex-start;
 }
 li {
   list-style: none;
@@ -52,6 +53,7 @@ nav button:hover {
 nav .logo {
   font-size: 2em;
   font-weight: bold;
+
 }
 
 .background-light {
@@ -81,12 +83,21 @@ h1 {
 .wrapper {
   display: flex;
   width: 100%;
-  height: 90vh;
-  padding: 3em;
+  height: 80vh;
 }
-
+.showcase-video {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  position: relative
+}
 iframe {
-  width: 60vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  width: 100%;
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -94,8 +105,8 @@ iframe {
 }
 
 h2 {
-  font-size: 2.2em;
-  margin-bottom: 2.5em;
+  font-size: 2em;
+  margin-bottom: 1em;
   color: #c8d1e0;
 }
 
@@ -103,6 +114,7 @@ h2 {
 
 .donation-progress {
   height: 100%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -114,6 +126,11 @@ h2 {
 .donation-progress p {
   word-wrap: wrap;
   padding: 0.5em;
+  color: #888;
+}
+
+b {
+  color: #000;
 }
 .donation-progress button {
   cursor: pointer;
@@ -125,6 +142,10 @@ h2 {
   border: none;
   color: #fff;
   background-color: #2bb359;
+}
+
+.bottom-desc {
+  margin-top: 3em;
 }
 
 button:hover {
@@ -151,9 +172,7 @@ span {
   height: 0.3em;
 }
 
-.bottom-desc {
-  margin-top: 5em;
-}
+
 
 .fa-rotate-135 {
   -ms-transform:rotate(135deg);     
@@ -161,7 +180,7 @@ span {
   transform:rotate(135deg);         
 }
 .keywords {
-  margin: -1em 0 0 10em;
+  margin: 3em 0 0 3em;
 }
 .keywords a{
   border: 1px solid #000;
@@ -230,8 +249,8 @@ h4 {
   margin-top: -6em;
 }
 .organizer-info {
-  width: 375px;
-  height: 375px;
+  width: 350px;
+  height: 350px;
   box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
   background: #fff;
   display: flex;
@@ -239,6 +258,7 @@ h4 {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  margin-top: 3em;
 }
 
 
@@ -356,3 +376,99 @@ img.to-reduce{
  ul {
    margin-bottom: 0.3em;
  }
+
+
+/* Media Querries Responsive */
+
+@media(max-width: 768px){
+  body {
+    font-size: 14px;
+  }
+  
+  nav {
+    padding: 0.5em 2em;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 4.5em 0;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .showcase-video {
+    width: 100vw;
+    height: 65vh;
+  }
+
+  iframe {
+    border-radius: 0;
+  }
+
+  .donation-progress {
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    padding: 1em 3em;
+    margin-top:0;
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  .donation-progress h3 {
+    font-size: 1.4em;    
+    margin-bottom: 1em;
+    font-weight: normal;
+  }
+
+  .donation-progress h2 {
+    font-size: 1em;
+    margin-bottom: 0.2em;
+    padding: 0;
+  }
+  .donation-progress .bottom-desc {
+    font-size: 1em;
+    margin-top:0;
+    padding: 0;
+    text-align: center;
+    padding: 0.5em;
+    width: 50%;
+    align-self: center;
+  }
+  span {
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+    color: #2bb359;
+  }
+
+  .prog-bar {
+    margin: 0;
+  }
+  
+  .campaign-info-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campaign-story-sec {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em;
+    text-align: left;
+  }
+
+}

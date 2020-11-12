@@ -488,7 +488,10 @@ img.to-reduce{
   .campaign-story {
     width: 100%;
   }
-
+  
+  .show-more-mobile {
+    display: none;
+  }
 
   .button-story{
     font-weight: 800;

@@ -35,14 +35,14 @@ const readLess = document.getElementById("read-less");
 const showText = document.getElementById("main-description");
 
 function showStory() {
-  showText.classList.remove('show-more');
+  showText.classList.remove('show-more-mobile');
   readMore.classList.add("hide-button");
   readLess.classList.remove("hide-button");
   
 }
 
 function hideStory(){
-  showText.classList.add('show-more');
+  showText.classList.add('show-more-mobile');
   readMore.classList.remove("hide-button");
   readLess.classList.add("hide-button");
 }

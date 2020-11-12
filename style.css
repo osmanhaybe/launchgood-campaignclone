@@ -488,8 +488,9 @@ img.to-reduce{
   .campaign-story {
     width: 100%;
   }
-  .campaign-story #read-more, .campaign-story #read-less {
-    cursor: pointer;
+
+
+  .button-story{
     font-weight: 800;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -497,7 +498,12 @@ img.to-reduce{
     background-color: initial;
     color: #57c282;
     text-align: center;
+    cursor: pointer;
    }
+
+  .button-story {
+    opacity: 0.7;
+  }
 
   .green-shade {
     width: 100%;

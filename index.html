@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"> 
   <title>Help Stop the Famine in East Africa | LaunchGood</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
@@ -44,7 +44,7 @@
   </div>
   <div class="campaign-info-wrap">
     <div class="campaign-story-sec">
-      <div class="title">
+      <div class="title" id="the-story-start">
         <h3>Story</h3>
       </div>  
       <div class="green-shade">
@@ -120,7 +120,7 @@
 
           <p>Thank you for your generosity.</p>
         </div>
-        <button id="read-less" class="hide-desktop button-story hide-button">Read Less</button>
+        <button onclick="location.href='#the-story-start'" id="read-less" class="hide-desktop button-story hide-button">Read Less</button>
       </div>
     </div>
     <div class="contain">
@@ -134,7 +134,7 @@
         <p>Toronto, Ontario</p>
       </div>
 
-      <div class="donors">
+      <div class="donors" id="donors">
         <h1>Recent Supporters</h1>
         <ul class="ul1">
           <li><img src="images/user-icon1.jpg" alt="user-image">An Anonymous kind soul<br><p>$10, 2 hours ago</p></li>
@@ -176,7 +176,7 @@
           <li><img src="images/user-icon9.jpg" class="to-reduce" alt="user-image">Qudratullah Hazrat Emir<br><p>$10, 17 days ago</p></li>
           <li><img src="images/user-icon5.jpg" class="to-reduce" alt="user-image">An Anonymous kind soul<br><p>$150, 17 days ago</p></li>
         </ul>
-        <button class="hide-desktop show-more-button" id="button3">See Less</button> 
+        <button onclick="location.href='#donors'" class="hide-desktop show-more-button" id="button3">See Less</button> 
       </div>
     </div>
   </div>

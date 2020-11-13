@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* wrapper around entire html to remove horizantal scrollbar */
+/* wrapper around entire html to remove horizantal scroll */
 .total-wrap {
   margin:0;
   padding:0;
@@ -46,6 +46,7 @@ li {
 
 li a {
   margin-right: 1em;
+  color: #000;
 }
 a {
   text-decoration: none;

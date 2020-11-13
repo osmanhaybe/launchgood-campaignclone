@@ -6,11 +6,6 @@
   padding:0;
 }
 
-.hide-big {
-  display: none;
-}
-
-
 nav {
   display: flex;
   justify-content: space-between;

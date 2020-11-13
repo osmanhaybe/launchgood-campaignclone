@@ -8,6 +8,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.total-wrap {
   margin:0;
   padding:0;
   background-color: #fff;
@@ -240,7 +243,9 @@ span {
 }
 
 .wrap h5 {
+  font-weight: bold;
   font-size: 1.5em;
+  margin: 1em 0 1.5em 0;
 }
 .wrap p {
   font-size: 1.2em;

@@ -2,10 +2,8 @@
 
 * {
   box-sizing: border-box;
-}
-
-.hide-big {
-  display: none;
+  margin:0;
+  padding:0;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,6 +11,11 @@ body {
   margin:0;
   padding:0;
 }
+
+.hide-big {
+  display: none;
+}
+
 
 nav {
   display: flex;
@@ -83,6 +86,10 @@ nav .logo {
  
 }
 
+.main h1 {
+  margin: 1em 0;
+}
+
 h1 {
   text-align: center;
 }
@@ -124,11 +131,15 @@ h2 {
   width: 30%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   background: #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+}
+.donation-progress h2 {
+  margin-top: 1em;
 }
 .donation-progress p {
   word-wrap: wrap;
@@ -234,20 +245,23 @@ span {
   font-size: 1.2em;
 }
 
-h4 {
+.campaign-story h4 {
   font-weight: bold;
   font-size: 1.8em;
+  margin: 1em 0;
   text-decoration: underline;
 }
 
 .campaign-story p {
   font-size: 1.3em;
+  margin: 1em 0;
 }
 
 .campaign-story img {
   width: 80%;
   height: auto;
 }
+
 
 .contain {
   display: flex;
@@ -317,10 +331,11 @@ h7 {
   flex-direction: column;
 }
 
-ul  {
+.donors ul  {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 1.5em;
 }
 
 .donors img {
@@ -346,6 +361,7 @@ img.to-reduce{
 
 .donors h1 {
   text-align: left;
+  margin: 1em 0;
 }
  .donors button {
   font-weight: 800;
@@ -364,7 +380,7 @@ img.to-reduce{
  }
 
  .see-less {
-   display: hidden;
+   display: none;
  }
 
  .show-more-button {
@@ -393,6 +409,7 @@ img.to-reduce{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
  }
 
  .footer-wrapper {
@@ -417,17 +434,20 @@ img.to-reduce{
  footer h3{
   color: #fff;
   font-size: 2em;
+  margin: 0.5em 0;;
  }
  
  footer p {
    color: #fff;
    font-size: 1.2em;
+   margin-bottom: 1em;
  }
 
  footer .buttons {
    display: flex;
    justify-content: center;
    align-items: center;
+   margin: 1em 0;
 
  }
 
@@ -475,6 +495,7 @@ img.to-reduce{
    display: flex;
    justify-content: space-around;
    align-items: center;
+   margin: 1em 0;
  }
  .success-info h4 {
    color: #CEC3EF;
@@ -488,15 +509,22 @@ img.to-reduce{
    display: flex;
    justify-content: center;
    align-items: center;
+   margin: 1em 0;
  }
 
  .icons i {
-   margin-right: 1em;
+   margin: 0 0.5em;
   color: #fff;
  }
 
  .icons i:hover {
    color: #c69df0;
+ }
+
+ .copy {
+   margin: 0.5em 0;
+   font-size: 1em;
+   text-align: center;
  }
 /* Media Querries Responsive */
 
@@ -600,19 +628,26 @@ img.to-reduce{
     margin: 0;
     padding: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
+  
 
   .campaign-story-sec p{
-    padding: 0 1.7em;
+    padding: 0 1.5em;
   }
 
   .campaign-story-sec h4{
     padding: 0 1.2em;
+    margin-top: 1em;
   }
 
   .campaign-story img {
-    margin: 0 5em;
+    padding:1.8em;
   }
+
 
   .title {
     width: 100vw;
@@ -688,7 +723,7 @@ img.to-reduce{
     display: none;
   }
   .donors {
-    margin: 0 1.7em;
+    padding: 0 1.7em;
   }
 }
 
@@ -700,11 +735,44 @@ img.to-reduce{
   .donation-progress .bottom-desc {
     width: 65%;
   }
+
+  .buttons {
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .campaign-but {
+    margin: 1.5em 0;
+    
+  }
+
+  .how-but {
+    margin: 0;
+    margin-bottom: 1.5em;
+  }
 }
 
 @media(max-width: 550px){
   .donation-progress .bottom-desc {
     width: 75%;
+  }
+
+  .success-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-info h4 {
+    margin: 0.75em 0;
+    padding:0;
+  }
+  .icons {
+    padding:0;
+    margin: 0.5em 0;
+    align-self: center;
   }
 }
 

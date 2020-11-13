@@ -34,7 +34,7 @@ var checkoutButton = document.getElementById('checkout-button-price_1Hn7CQESR5nd
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1Hn7CQESR5ndN1539u9zFkjk', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -57,7 +57,7 @@ var checkoutButton = document.getElementById('checkout-button-price_1HlgqvESR5nd
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqvESR5ndN153hWFkfIvL', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -83,7 +83,7 @@ checkoutButton.addEventListener('click', function () {
   stripe.redirectToCheckout({
     lineItems: [{price: 'price_1HlgqwESR5ndN153NWmWAQMH', quantity: 1}],
     mode: 'payment',
-    successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+    successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
     cancelUrl: 'https://launchgood-campaignclone.netlify.app',
   })
   .then(function (result) {
@@ -107,7 +107,7 @@ var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqvESR5ndN153XN63hivJ', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -133,7 +133,7 @@ var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqvESR5ndN1531vIAwdEb', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -158,7 +158,7 @@ var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqxESR5ndN153ZiXavXBr', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -183,7 +183,7 @@ var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqwESR5ndN153CWcQtoWA', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -208,7 +208,7 @@ var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqwESR5ndN153tf89bRfl', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {
@@ -231,7 +231,7 @@ var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1HlgqwESR5ndN153aWBACB6N', quantity: 1}],
       mode: 'payment',
-      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success.html',
       cancelUrl: 'https://launchgood-campaignclone.netlify.app',
     })
     .then(function (result) {

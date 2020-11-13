@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- wrap class over entire code to remove horizantal scroll -->
   <div class="total-wrap">
+
+    <!-- navbar -->
     <nav>
       <button class="hide-mobile">Start a Campaign</button>
       <a href="#" class="logo">LaunchGood</a>
@@ -20,10 +23,13 @@
     <div class="background-light hide-mobile"></div>
     <div class="main">
       <h1 class="hide-mobile">Help Stop the Famine in East Africa!</h1>
+      <!-- ampaign video/donation decription wrapper -->
       <div class="wrapper">
+        <!-- campaign video display -->
         <div class="showcase-video">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/dwagZ94WSfo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <!-- Donation description/progressbar/supportbutton -->
         <div class="donation-progress">
           <h2 class="hide-mobile">LaunchGood</h2>
           <h3 class="hide-desktop">Help Stop the Famine in East Africa!</h3>
@@ -34,7 +40,7 @@
           <p><b>51</b> supporters, 47 days left!</p>
         
 
-          <button onclick="location.href='donations.html';" value="Go to Google">Support</button>
+          <button class="support-button" id="open-modal">Support</button>
           <p class="bottom-desc"><b>Partial Funding</b> This campaign will collect all funds raised by Dec 26, 2020 10:45 AM.</p>
         </div>
       </div>
@@ -43,6 +49,94 @@
     <div class="keywords">
       <a href=""><i class="far fa-bookmark fa-rotate-135 fa-lg"></i> Causes</a>
     </div>
+
+    <!-- Modal Popup for donations -->
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Select your pledge amount below:</div>
+        <button id="close-modal" class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+      
+        <button class="donate-buttons"
+          id="checkout-button-price_1Hn7CQESR5ndN1539u9zFkjk"
+          role="link"
+          type="button">
+          $5
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqvESR5ndN153hWFkfIvL"
+          role="link"
+          type="button">
+          $10
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+        id="checkout-button-price_1HlgqwESR5ndN153NWmWAQMH"
+        role="link"
+        type="button">
+        $20
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqvESR5ndN153XN63hivJ"
+          role="link"
+          type="button">
+          $50
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqvESR5ndN1531vIAwdEb"
+          role="link"
+          type="button">
+          $75
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqxESR5ndN153ZiXavXBr"
+          role="link"
+          type="button">
+          $100
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqwESR5ndN153CWcQtoWA"
+          role="link"
+          type="button">
+          $150
+        </button>
+        <div id="error-message"></div>
+  
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqwESR5ndN153tf89bRfl"
+          role="link"
+          type="button">
+          $200
+        </button>
+        <div id="error-message"></div>
+  
+        <button class="donate-buttons"
+          id="checkout-button-price_1HlgqwESR5ndN153aWBACB6N"
+          role="link">
+          $250
+        </button>
+        <div id="error-message"></div>
+  
+      </div>
+  
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+    
+    <!-- Campaign description & list of donors -->
     <div class="campaign-info-wrap">
       <div class="campaign-story-sec">
         <div class="title" id="the-story-start">
@@ -205,5 +299,7 @@
     </footer>
   </div>
   <script src="script.js"></script>
+  <script src="https://js.stripe.com/v3"></script>
+  <script src="donations.js"></script>
 </body>
 </html>

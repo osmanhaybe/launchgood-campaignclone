@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* wrapper around entire html to remove horizantal scrollbar */
 .total-wrap {
   margin:0;
   padding:0;
@@ -21,6 +22,8 @@ body {
   display:none;
 }
 
+
+/* Navigation bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -103,6 +106,8 @@ h1 {
   width: 100%;
   height: 80vh;
 }
+
+/* Video showcase */
 .showcase-video {
   width: 70%;
   height: 100%;
@@ -129,7 +134,7 @@ h2 {
 }
 
 
-
+/* Donation progress section & support button */
 .donation-progress {
   height: 100%;
   width: 30%;
@@ -202,6 +207,96 @@ span {
   transform:rotate(135deg);         
 }
 
+/* Donations Modal popup */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: none;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #ebf4f4;
+  padding: 3em;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #777;
+  background: none;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: -1.2em;
+  right: -1.2em;
+}
+
+.modal-body {
+  padding: 1.5em;
+  background-color: #fff;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.donate-buttons {
+  cursor: pointer;
+  background-color:#00AD86;
+  color:#FFF;
+  padding:0.5em;
+  width: 75px;
+  border:0;
+  border-radius:5px;
+  font-size:1.2em;
+  margin: 1em;
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Campaign Keywords */
 .keywords a{
   border: 1px solid #000;
   border-radius: 30px;
@@ -209,6 +304,7 @@ span {
   margin: 3em 0 0 3em;
 }
 
+/* Campaign description & Donors */
 .campaign-info-wrap {
   width: 100%;
   position: relative;
@@ -402,6 +498,8 @@ button.show-more-button {
   display: none;
 }
 
+
+/* Footer */
  footer {
   background-color: #645398;
   height: 100%;

@@ -1,4 +1,51 @@
+const openModalButton = document.getElementById('open-modal');
+const closeModalButton = document.getElementById('close-modal');
+const overlay = document.getElementById('overlay');
+const modal = document.getElementById("modal");
 
+openModalButton.addEventListener('click', () => {
+    openModal(modal);
+  });
+
+
+
+closeModalButton.addEventListener('click', () => {
+    closeModal(modal);
+  });
+
+
+function openModal(modal) {
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
+
+function closeModal(modal) {
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
+
+// 5 dollar donation button
+var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');
+
+var checkoutButton = document.getElementById('checkout-button-price_1Hn7CQESR5ndN1539u9zFkjk');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1Hn7CQESR5ndN1539u9zFkjk', quantity: 1}],
+      mode: 'payment',
+      successUrl: 'https://launchgood-campaignclone.netlify.app/success',
+      cancelUrl: 'https://launchgood-campaignclone.netlify.app',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
 
 // 10 dollar donation button
 var stripe = Stripe('pk_test_olmYBEVDEJql4loxOuC9dYH6');

@@ -17,7 +17,7 @@ function showUlThree() {
   buttonTwo.classList.add("show-more-button");
 }
 
-function lessDonors() {
+function showLessDonors() {
   ulTwo.classList.add("show-more");
   ulThree.classList.add("show-more");
   buttonOne.classList.remove("show-more-button");
@@ -28,7 +28,7 @@ function lessDonors() {
 // Event Listeners
 buttonOne.addEventListener('click', showUlTwo);
 buttonTwo.addEventListener('click', showUlThree);
-buttonThreeL.addEventListener('click', lessDonors);
+buttonThreeL.addEventListener('click', showLessDonors);
 
 
 const readMore = document.getElementById("read-more");

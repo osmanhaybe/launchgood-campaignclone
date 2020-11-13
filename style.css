@@ -329,13 +329,14 @@ h7 {
 .donors {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .donors ul  {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1.5em;
+  margin: 0 0 0.3em 1.5em;
 }
 
 .donors img {
@@ -375,30 +376,23 @@ img.to-reduce{
   margin-bottom: 2.5em;
  }
 
- 
 
  .see-less {
    display: none;
  }
 
- .show-more-button {
-   display: none;
- }
+ 
 
  button:focus{
    outline: 0;
  }
 
- .ul2, .ul3 {
-  margin-top: 0;
-  margin-bottom: 0.3em;
- }
 
- ul {
-   margin-bottom: 0.3em;
- }
+ .donors ul.show-more {
+  display: none;
+}
 
- .show-more {
+button.show-more-button {
   display: none;
 }
 
@@ -684,7 +678,7 @@ img.to-reduce{
     display: flex;
     flex-direction: column;
   }
-  
+
   .show-more-mobile {
     display: none;
   }
@@ -727,6 +721,14 @@ img.to-reduce{
   .donors {
     padding: 0 1.7em;
   }
+
+  .show-more {
+    display: none;
+  }
+
+  .show-more-button {
+    display: none;
+  }
 }
 
 @media(max-width: 675px){
@@ -753,6 +755,18 @@ img.to-reduce{
   .how-but {
     margin: 0;
     margin-bottom: 1.5em;
+  }
+
+  .show-more-mobile {
+    display: none;
+  }
+
+  .show-more {
+    display: none;
+  }
+
+  .show-more-button {
+    display: none;
   }
 }
 

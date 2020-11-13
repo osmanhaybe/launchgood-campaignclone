@@ -5,12 +5,6 @@
   margin:0;
   padding:0;
 }
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  margin:0;
-  padding:0;
-}
 
 .hide-big {
   display: none;
@@ -375,9 +369,7 @@ img.to-reduce{
   margin-bottom: 2.5em;
  }
 
- .show-more {
-   display: none;
- }
+ 
 
  .see-less {
    display: none;
@@ -391,7 +383,7 @@ img.to-reduce{
    outline: 0;
  }
 
- #ul2, #ul3 {
+ .ul2, .ul3 {
   margin-top: 0;
   margin-bottom: 0.3em;
  }
@@ -399,6 +391,10 @@ img.to-reduce{
  ul {
    margin-bottom: 0.3em;
  }
+
+ .show-more {
+  display: none;
+}
 
  footer {
   background-color: #645398;

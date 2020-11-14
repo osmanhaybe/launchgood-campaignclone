@@ -224,6 +224,7 @@ span {
   padding: 3em;
   width: 500px;
   max-width: 80%;
+
 }
 
 .modal.active {
@@ -238,9 +239,10 @@ span {
 }
 
 .modal-header .title {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: bold;
   margin: 0.5em;
+  border-bottom: none;
 }
 
 .modal-header .close-button {
@@ -257,7 +259,7 @@ span {
 }
 
 .modal-body {
-  padding: 1.5em;
+  padding: 0.5em;
   background-color: #fff;
 }
 
@@ -878,6 +880,53 @@ button.show-more-button {
   .show-more-button {
     display: none;
   }
+
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: none;
+    border-radius: 10px;
+    z-index: 1000;
+    background-color: #ebf4f4;
+    padding: 3em;
+    width: 500px;
+    max-width: 80%;
+  
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  
+  .modal-header .title {
+    font-size: 1em;
+    margin: 0.25em;
+    border-bottom: none;
+    font-weight: bold;
+  }
+  
+  
+  .modal-body {
+    padding: 0.5em;
+    background-color: #fff;
+  }
+  
+  
+  .donate-buttons {
+    padding:0.5em;
+    width: 50px;
+    border:0;
+    border-radius:5px;
+    font-size:1em;
+    margin: 0.4em;
+  }
+  
+  
 }
 
 @media(max-width: 550px){
@@ -900,6 +949,7 @@ button.show-more-button {
     margin: 0.5em 0;
     align-self: center;
   }
+
 }
 
 
